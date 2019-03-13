@@ -33,7 +33,6 @@ body {
 // }
 
 .container {
-    margin: 0 auto;
     max-width: 1440px;
 }
 
@@ -46,6 +45,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 
 /* Navigation */
+
+nav {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    font-size: 24px;
+}
 
 // .menu {
 //     a {
