@@ -15,41 +15,48 @@ $turquoise: #63c7b2;
 
 body {
     color: $primary-color;
+    font-family: "Lora", serif;
     line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 
-a,
-.variation {
-    color: $accent-color;
-    padding: 8px 8px 4px;
+// a,
+// .variation {
+//     color: $accent-color;
+//     padding: 8px 8px 4px;
 
-    &:hover {
-        background: $accent-color;
-        color: white;
-    }
-}
+//     &:hover {
+//         background: $accent-color;
+//         color: white;
+//     }
+// }
 
 .container {
     margin: 0 auto;
     max-width: 1440px;
 }
 
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Anton", sans-serif;
+}
+
 /* Header */
 
 /* Navigation */
 
-.menu {
-    a {
-        text-decoration: none;
-    }
+// .menu {
+//     a {
+//         text-decoration: none;
+//     }
     
-    li {
-        display: inline-block;
-        list-style: none;
-    }
-}
+//     li {
+//         display: inline-block;
+//         list-style: none;
+//     }
+// }
 
 /* Main */
 
