@@ -1,0 +1,67 @@
+/* Variables */
+
+/* coolors.co
+ * https://coolors.co/ccdbdc-80ced7-63c7b2-8e6c88-263d42
+ * https://coolors.co/e3c0d3-95818d-576066-2c514c-122932
+ */
+
+$primary-color: #263d42;
+$secondary-color: #ccdbdc;
+$accent-color: #8e6c88;
+$light-blue: #80ced7;
+$turquoise: #63c7b2;
+
+/* Global styles */
+
+body {
+    color: $primary-color;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+.variation {
+    color: $accent-color;
+    padding: 8px 8px 4px;
+
+    &:hover {
+        background: $accent-color;
+        color: white;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* Header */
+
+/* Navigation */
+
+.menu {
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+}
+
+/* Main */
+
+.variation {
+    &::before {
+        content: "\f126";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        padding-right: 4px;
+    }
+
+    cursor: pointer;
+}
+
+/* Footer */
