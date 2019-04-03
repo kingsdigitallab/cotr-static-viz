@@ -1,7 +1,11 @@
 $(function () {
-    $('[data-toggle="popover"]').popover();
+    'use strict'
 
-    $('.popover-dismiss').popover({
-      trigger: 'focus';
+    $('[data-toggle="popover"]').popover({
+        html: true
     });
+
+    // $('.popover-dismiss').popover({
+    //   trigger: 'focus';
+    // });
 })
