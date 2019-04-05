@@ -1,0 +1,6 @@
+# Mac
+.DS_Store
+
+# SASS
+# Ignore css cached files
+.sass-cache
