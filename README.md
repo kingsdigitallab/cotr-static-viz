@@ -17,4 +17,4 @@ When working on the project, run `sass` locally to compile and compress css.
 sass --watch main.scss:main.min.css --style compressed
 ```
 
-
+The line above will take a `main.css` file and output a `main.min.css` one in the same folder.
