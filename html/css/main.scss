@@ -10,6 +10,7 @@ $secondary-color: #ccdbdc;
 $accent-color: #8e6c88;
 $light-blue: #80ced7;
 $turquoise: #63c7b2;
+$orange: #ffaa00;
 
 /* Global styles */
 
@@ -46,7 +47,23 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0 .5rem;
 }
 
+.page-name {
+    color: $accent-color;
+
+    &::after {
+        color: $light-blue;
+        content: "|";
+        padding: 0 .5rem 0 1rem;
+    }
+}
+
 /* Header */
+
+header {
+    a {
+        color: inherit;
+    }
+}
 
 /* Navigation */
 
@@ -120,6 +137,18 @@ nav {
         * {
             opacity: 1;
         }
+    }
+
+    &.q {
+        background: lighten($accent-color, 10%)
+    }
+
+    &.r {
+        background: lighten($turquoise, 10%)
+    }
+
+    &.s {
+        background: lighten($orange, 10%)
     }
 }
 
