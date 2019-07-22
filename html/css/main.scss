@@ -42,9 +42,14 @@ footer {
     padding: 16px;
 }
 
+hr {
+    margin: 32px 0;
+}
+
 .panel {
     background: lighten($secondary-color, 13%);
     border: 1px solid $secondary-color;
+    font-size: 16px;
     margin: 16px 0;
     padding: 16px;
 
