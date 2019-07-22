@@ -18,6 +18,7 @@ $orange: #ffaa00;
 body {
     color: $primary-color;
     font-family: "Lora", serif;
+    font-size: 24px;
     line-height: 2;
     margin: 0;
     padding: 0;
@@ -166,8 +167,13 @@ nav {
 }
 
 .multiple,
-.q, .r, .s {
+.q, .r, .s, .x, .y, .z {
+    // color: white;
 
+    &:hover {
+        color: black;
+        cursor: pointer;
+    }
 }
 
 .multiple {
@@ -184,6 +190,53 @@ nav {
 
 .s {
     background: lighten($orange, 25%)
+}
+
+.x {
+    background: lighten($primary-color, 50%)
+}
+
+.y {
+    background: lighten($light-blue, 25%)
+}
+
+.z {
+    background: lighten(yellow, 25%)
+}
+
+.multi {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 50px;
+
+    .q, .r, .s, .x, .y, .z {
+        font-size: 4px;
+        height: 10px;
+        left: 0;
+        line-height: 3px;
+        position: absolute;
+        width: 100%;
+
+        &:hover {
+            background: white;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .q, .x {
+        top: 0;
+    }
+
+    .r, .y {
+        top: 10px;
+    }
+
+    .s, .z {
+        top: 20px;
+    }
 }
 
 /* Footer */
