@@ -8,6 +8,7 @@
 $primary-color: #263d42;
 $secondary-color: #ccdbdc;
 $accent-color: #8e6c88;
+$green: #689F38;
 $light-blue: #80ced7;
 $turquoise: #63c7b2;
 $orange: #ffaa00;
@@ -40,6 +41,18 @@ footer {
     padding: 16px;
 }
 
+.panel {
+    background: lighten($secondary-color, 13%);
+    border: 1px solid $secondary-color;
+    margin: 16px 0;
+    padding: 16px;
+
+    h2 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +68,18 @@ h1, h2, h3, h4, h5, h6 {
         content: "|";
         padding: 0 .5rem 0 1rem;
     }
+}
+
+.row {
+    display: flex;
+    padding: 16px;
+}
+
+.block {
+    border: 1px solid $secondary-color;
+    flex-grow: 1 1 auto;
+    max-width: 33%;
+    padding: 16px;
 }
 
 /* Header */
@@ -138,18 +163,27 @@ nav {
             opacity: 1;
         }
     }
+}
 
-    &.q {
-        background: lighten($accent-color, 10%)
-    }
+.multiple,
+.q, .r, .s {
 
-    &.r {
-        background: lighten($turquoise, 10%)
-    }
+}
 
-    &.s {
-        background: lighten($orange, 10%)
-    }
+.multiple {
+    background: lighten($green, 25%);
+}
+
+.q {
+    background: lighten($accent-color, 25%)
+}
+
+.r {
+    background: lighten($turquoise, 25%)
+}
+
+.s {
+    background: lighten($orange, 25%)
 }
 
 /* Footer */
